@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://net.superglobals/" xmlns:tns="http://net.superglobals/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="EurTousd" type="tns:EurTousd"/>
+
+  <xs:element name="EurTousdResponse" type="tns:EurTousdResponse"/>
+
+  <xs:complexType name="EurTousd">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="EurTousdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
